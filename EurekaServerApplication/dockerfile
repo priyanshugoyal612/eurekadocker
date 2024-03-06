@@ -1,0 +1,4 @@
+FROM openjdk:17
+COPY eureka-server/EurekaService*.jar /app/eureka-service.jar
+WORKDIR /app
+CMD ["java", "-jar", "eureka-service.jar"]

@@ -1,0 +1,4 @@
+FROM openjdk:17
+COPY eureka-client/EurekaClientApplication*.jar /app/eureka-client
+WORKDIR /app
+CMD ["java", "-jar", "eureka-client.jar"]

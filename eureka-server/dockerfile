@@ -1,0 +1,7 @@
+FROM openjdk:17
+WORKDIR /app
+COPY /eurekaserver.jar /app/eurekaserver.jar
+
+EXPOSE 8761
+
+CMD ["java", "-jar", "eurekaserver.jar"]
